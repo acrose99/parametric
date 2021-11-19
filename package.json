@@ -1,0 +1,59 @@
+{
+  "name": "react-three-next",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "yarn prettier && yarn eslint",
+    "eslint": "next lint --fix --dir src",
+    "prettier": "prettier --list-different \"./src/**/*.{js,jsx,md}\"",
+    "dev": "next dev",
+    "build": "next build",
+    "export": "EXPORT=true next build && EXPORT=true next export",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@react-three/drei": "^7.15.0",
+    "@react-three/fiber": "^7.0.16",
+    "glsl-random": "^0.0.5",
+    "glsl-film-grain" : "^1.0.4",
+    "glsl-blend-soft-light":"1.0.5",
+    "leva": "^0.9.14",
+    "next": "^11.1.2",
+    "react": "^18.0.0-alpha-dbe3363cc",
+    "react-dom": "^17.0.2",
+    "short-uuid": "^4.2.0",
+    "three": "^0.133.1",
+    "three-stdlib": "^2.5.4",
+    "zustand": "^3.5.13"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "@babel/core": "^7.15.4",
+    "@next/bundle-analyzer": "^11.1.2",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
+    "@types/three": "^0.133.0",
+    "autoprefixer": "^10.3.4",
+    "babel-plugin-glsl": "^1.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "file-loader": "^6.2.0",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-offline": "^5.0.5",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^2.2.9",
+    "typescript": "^4.4.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.52.0"
+  }
+}
